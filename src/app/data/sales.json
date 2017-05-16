@@ -1,0 +1,97 @@
+// Sales by division data
+{
+    "title": {
+        "text": "Percentage of Beverage Sales"    
+    },
+    "plotarea": {
+        "margin-left": "dynamic"
+    },
+    "legend": {
+        "layout": "float",
+        "background-color": "none",
+        "border-width": 0,
+        "shadow": 0,
+        "width":"100%",
+        "text-align":"middle",
+        "x":"30%",
+        "y":"7%",
+        "item": {
+            "font-size": "14px",
+        }
+    },
+    "type": "line",
+    "theme": "dark",
+    "scale-x": {
+        "values": "2001:2016:1",
+        "label": {
+            "text": "Year",
+            "font-size": 12
+        }
+    },
+    "scale-y": {
+        "label": {
+            "text": "Percentage",
+            "font-size": 12
+        },
+        "labels": ["0%", "10%", "20%", "30%", "40%", "50%"]
+    },
+    "crosshair-x": {},
+    "series": [ 
+        // Beer Percentage
+        { "values": [46, 44, 42, 39, 39, 41, 40, 42, 40, 41, 36, 39, 36, 41, 42, 43],
+            "text": "Beer",
+            "legend-marker": {
+                "type": "circle",
+                "size": 5,
+                "background-color": "#007790",
+                "border-width": 1,
+                "shadow": 0,
+                "border-color": "#69dbf1"
+            },
+            "marker": {
+                "background-color": "#007790",
+                "border-width": 1,
+                "shadow": 0,
+                "border-color": "#69dbf1"
+            }
+        },
+        // Wine Percentage
+        { "values": [31, 30, 33 ,33, 36, 33, 34, 31, 34, 32, 35, 35, 35, 31, 34, 32],
+            "text": "Wine",
+            "legend-marker": {
+                "type": "square",
+                "size": 5,
+                "background-color": "#ff4d4d",
+                "border-width": 1,
+                "shadow": 0,
+                "border-color": "#e60000"
+            },
+            "marker": {
+                "type": "square",
+                "background-color": "#ff4d4d",
+                "border-width": 1,
+                "shadow": 0,
+                "border-color": "#e60000"
+            }
+        },
+        // Spirits Percentage
+        { "values": [18, 22, 22, 24, 21, 23, 22, 23, 21, 21, 23, 22, 23, 23, 21, 20],
+            "text": "Spirits",
+            "legend-marker": {
+                "type": "diamond",
+                "size": 5,
+                "background-color": "#70db70",
+                "border-width": 1,
+                "shadow": 0,
+                "border-color": "#29a329"
+            },
+            "marker": {
+                "type": "diamond",
+                "background-color": "#70db70",
+                "border-width": 1,
+                "shadow": 0,
+                "border-color": "#29a329"
+            } 
+        }
+    ]
+}

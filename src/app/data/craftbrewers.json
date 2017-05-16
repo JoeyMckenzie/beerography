@@ -1,0 +1,21 @@
+// Craft breweries stats
+{
+  "type": "funnel",   //or "vfunnel"
+  "title": {
+      "text": "Number of Breweries by Year"
+  },
+  "theme": "dark",
+  "scale-y": {
+      "labels": ["2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009"]
+  },
+  "series": [
+    {"values": [5234]},
+    {"values": [4504]},
+    {"values": [3743]},
+    {"values": [2898]},
+    {"values": [2420]},
+    {"values": [1977]},
+    {"values": [1749]},
+    {"values": [1596]}
+  ]
+}

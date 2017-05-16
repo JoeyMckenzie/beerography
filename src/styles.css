@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* ================
+    Font Stylings
+================= */
+h3, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* ===============
+    LinkedIn/Github
+=============== */
+.contact-link {
+    width: 100px;
+    height: 50px;
+    opacity: 0.75;
+    display: inline-block;
+    transition: 0.2s ease;
+    padding: 0 20px 0 20px;
+}
+
+.contact-link:hover {
+    transform: scale(1.3, 1.3);
+    opacity: 1;
+}
+
+.shameless-plug {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+}
+
+.shameless-plug img {
+    position: relative;
+}
+
+
+/* ================
+    ZingChart Styles
+================== */
+#sale-by-division, #craft-breweries, #san-diego-stats {
+    max-width: 800px;
+}
+
+
+/* ================
+    Footer
+================ */
+footer {
+    text-align: center;
+	margin-bottom: -15px;
+    padding-right: 40px;
+}
+
+
+footer li {
+	display: inline-block;
+	font-size: 10px;
+	color: grey;
+}

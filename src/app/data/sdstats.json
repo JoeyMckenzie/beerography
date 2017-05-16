@@ -1,0 +1,71 @@
+{
+    "type": "bar",
+    "stacked": true,
+    "theme": "dark",
+    "title": {
+        "text": "San Diego Breweries",
+        "adjustLayout": true
+    },
+    "scale-x": {
+        "values": "2011:2016:1",
+        "label": {
+            "text": "Year",
+            "font-size": 12
+        }
+    },
+    "legend": {
+        "layout": "float",
+        "background-color": "none",
+        "border-width": 0,
+        "shadow": 0,
+        "width":"100%",
+        "text-align":"middle",
+        "x": "20%",
+        "y":"7%",
+        "item": {
+            "font-size": "14px",
+        }
+    },
+    "series": [
+        // number of jobs
+        /*
+        { "values": [1630, 1820, 2279, 3752, 4005, 4512], 
+            "text": "Jobs",
+            "legend-marker": {
+                "type": "square",
+                "size": 5,
+                "background-color": "#ff4d4d",
+                "border-width": 1,
+                "shadow": 0,
+                "border-color": "#e60000"
+            }
+        },
+        */
+        // Number of breweries 
+        { "values": [37, 58, 82, 97, 109, 114], 
+            "text": "Breweries",
+            "legend-marker": {
+                "type": "square",
+                "size": 5,
+                "background-color": "#0099ff",
+                "border-width": 1,
+                "shadow": 0,
+                "border-color": "#007acc"
+            },
+            "background-color": "#0099ff"
+        },
+        // Number of jobs per brewery
+        { "values": [1630/37, 1820/58, 2279/82, 3752/97, 4005/109, 4512/114],
+            "text": "Jobs per Brewery",
+            "legend-marker": {
+                "type": "square",
+                "size": 5,
+                "background-color": "#00e6ac",
+                "border-width": 1,
+                "shadow": 0,
+                "border-color": "#00b386"
+            },
+            "background-color": "#00e6ac"
+        }
+    ]
+}
